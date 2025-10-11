@@ -1,2 +1,2 @@
 # NeuMTL
-<img src="framework.jpg" alt="示例图片" width="300"/>
+<img src="framework.jpg" alt=""/>
