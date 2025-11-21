@@ -6,6 +6,6 @@
 <h4>conda activate NeuMTL<br> python create create_data.py<br> 
 <h3> Create Dataset 2<br> 
 <h4>conda activate NeuMTL<br> python create create_data2.py<br>
-
-<h4>conda env create -f NeuMTL.yml<br>
+<h1> Model Training<br>
+<h4>python training.py<br>
 <img src="framework.jpg" alt=""/>
