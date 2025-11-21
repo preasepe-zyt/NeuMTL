@@ -1,25 +1,11 @@
 # NeuMTL
-<h1>Environment Setup</h1>
-<h4>
-conda env create -f NeuMTL.yml <br>
-conda activate NeuMTL
-</h4>
-
-<h1>Dataset Preparation</h1>
-<p>
-Dataset 1 (<i>data1</i>) consists of three widely used drug–target affinity benchmarks: Davis, KIBA, and BindingDB.  
-Dataset 2 (<i>data2</i>) contains blood–brain barrier (BBB) permeability data and neurotoxicity information.
-</p>
-
-<h3>Generate Dataset 1</h3>
-<h4>
-python create_data.py
-</h4>
-
-<h3>Generate Dataset 2</h3>
-<h4>
-python create_data2.py
-</h4>
+<h1> Environment Setup<br> <h4>conda env create -f NeuMTL.yml<br> 
+<h1> Create Dataset<br>
+<h4> Dataset 1 (*data1*) comprises three commonly used drug–target interaction benchmarks: Davis, KIBA, and BindingDB.<br>Dataset 2 (*data2*) includes blood–brain barrier (BBB) permeability data and neurotoxicity data.<br> 
+<h3> Create Dataset 1<br> 
+<h4>conda activate NeuMTL<br> python create create_data.py<br> 
+<h3> Create Dataset 2<br> 
+<h4>conda activate NeuMTL<br> python create create_data2.py<br>
 
 <h4>conda env create -f NeuMTL.yml<br>
 <img src="framework.jpg" alt=""/>
