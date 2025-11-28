@@ -103,10 +103,10 @@ def train(model, device, train_loader1, train_loader2, train_loader3, train_load
             
             for i, loss_i in enumerate(train_tasks):
                     loss_i.backward(retain_graph=True)   
-                    grad2vec(model, grads, grad_dims, i) 
+                    NeuGradBalancervec(model, grads, grad_dims, i) 
                     model.zero_grad_shared_modules()   
                     
-            g = graddrop(grads)          
+            g = NeuGradBalancer(grads)          
             overwrite_grad(model, g, grad_dims, len(train_tasks)) 
 
             optimizer.step()
