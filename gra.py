@@ -3,7 +3,7 @@ import torch
 
 
 
-def graddrop(grads):
+def NeuGradBalancer(grads):
     P = 0.5 * (1. + grads.sum(1) / (grads.abs().sum(1) + 1e-8))
     U = torch.rand_like(grads[:, 0])
     M = P.gt(U).view(-1, 1) * grads.gt(0) + P.lt(U).view(-1, 1) * grads.lt(0)
@@ -25,7 +25,7 @@ def overwrite_grad(m, newgrad, grad_dims, num_tasks):
             cnt += 1
 
 
-def grad2vec(m, grads, grad_dims, task):
+def NeuGradBalancervec(m, grads, grad_dims, task):
     # store the gradients
     grads[:, task].fill_(0.0)
     cnt = 0
