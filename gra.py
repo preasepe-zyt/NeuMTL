@@ -1,8 +1,6 @@
 import torch
 
 
-
-
 def NeuGradBalancer(grads):
     P = 0.5 * (1. + grads.sum(1) / (grads.abs().sum(1) + 1e-8))
     U = torch.rand_like(grads[:, 0])
