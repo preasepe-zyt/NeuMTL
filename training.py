@@ -88,7 +88,7 @@ def train(model, device, train_loader1, train_loader2, train_loader3, train_load
             bce_loss3 = bce_f(classification3, data4.y.view(-1, 1).float().to(device))
             bce_loss4 = bce_f(classification4, data5.y.view(-1, 1).float().to(device))
 
-            train_tasks = [mse_loss, bce_loss1, bce_loss2, bce_loss3, bce_loss4]
+
             train_ci = get_cindex(Pridection.cpu().detach().numpy(), data1.y.view(-1, 1).float().cpu().detach().numpy())
 
             train_tasks = [mse_loss, bce_loss1, bce_loss2, bce_loss3, bce_loss4]
