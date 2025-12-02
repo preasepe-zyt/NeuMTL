@@ -326,8 +326,7 @@ class NeuMTL(torch.nn.Module):
                 self.rnn,
                 self.transformer_seq,
                 self.attn_seq,
-                self.resnet18,
-                self.class_fc_bbb] 
+                self.resnet18] 
 
     def zero_grad_shared_modules(self):
         for mm in self.shared_modules():
