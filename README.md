@@ -13,4 +13,4 @@
 <h4>model.py</h4> Defines the overall NeuMTL model architecture. <h4>gated_attention.py</h4> Implements the gated attention mechanism for modality-aware feature weighting. <h4>shared_attention.py</h4> Implements the shared attention layer for representation learning across tasks. <h4>Task_Specific_Attention.py</h4> Implements task-specific attention modules to capture unique task-level feature contributions. <h4>gra.py</h4> Multi-task gradient regulation strategies. <h4>training.py</h4> Controls the full training pipeline. <h4>utils.py</h4> Contains utility functions including loss computation, evaluation metrics, logging, and checkpoint saving. <h4>create_data.py</h4> Data preprocessing for drug–target datastes. <h4>create_data2.py</h4> Data preprocessing for BBB permeability and neurotoxicity datastes. <h4>framework.jpg</h4> Illustration of the NeuMTL multimodal multi-task framework. 
 <img src="framework.jpg" alt=""/>
 
-<h1> mkdir Affinities logs saved_models
+<h4> mkdir Affinities logs saved_models
